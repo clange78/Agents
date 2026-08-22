@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "what-actually-fixed-my-sleep",
+    "title": "What Actually Fixed My Sleep",
+    "metaTitle": "What Actually Fixed My Sleep",
+    "metaDescription": "Two years of sleep experiments, ranked by what actually worked. The cheapest change beat the most expensive one, which was annoying.",
+    "publishedAt": "2026-04-08",
+    "excerpt": "Two years of experiments, ranked honestly. The thirty-nine dollar item beat the two thousand dollar one.",
+    "body": [
+      "I have spent an embarrassing amount of money on sleep. Some of it worked. Most of the things that worked were cheap, and the order in which they worked is almost exactly the inverse of the order in which I bought them.",
+      "Darkness first. A properly blacked-out room did more than any device I own, and a good mask gets you most of the way there for under forty dollars. I ignored this for a year because it felt too simple to matter.",
+      "Temperature second. This is the one place the expensive thing genuinely earned it for me: I was not waking at three because of stress, I was waking because I was too warm. If you can solve that with a cheaper mattress topper and a fan, solve it that way first.",
+      "Consistency third, and this is where the tracking helped. Not because the score meant anything, but because it showed me my bedtime varied by two hours across a week when I would have sworn it varied by twenty minutes.",
+      "Magnesium last, and with a caveat: it is the one supplement I have kept, and I genuinely cannot tell you whether it is doing something or whether taking it has just become part of a wind-down that works. I am at peace with that.",
+      "If you are starting from zero, buy in the order above and give each change two full weeks before you judge it. Almost everything here felt like nothing for the first few nights."
+    ],
+    "dealSlugs": [
+      "manta-sleep-mask-pro",
+      "eight-sleep-pod-cover",
+      "oura-ring-4",
+      "thorne-magnesium-bisglycinate"
+    ],
+    "status": "published"
+  },
+  {
+    "slug": "the-stack-i-would-start-with-today",
+    "title": "The Stack I Would Start With Today",
+    "metaTitle": "The Creator Stack I'd Start With Today",
+    "metaDescription": "If I were starting a channel this month, this is the short list of tools I would pay for and the longer list I would skip.",
+    "publishedAt": "2026-04-22",
+    "excerpt": "Starting over with what I know now: three tools I would pay for immediately, and the ones I would happily skip for a year.",
+    "body": [
+      "The mistake I made was buying the whole stack in one weekend. Every tool arrived at once, none of them removed a bottleneck, and I spent the next three months paying for software I had not learned.",
+      "If I were starting today I would buy exactly one thing: whatever removes the step I currently dread. For me that was editing, and editing by transcript cut my rough-cut time roughly in half. Everything else could have waited a year.",
+      "The second purchase would be email, and I would make it far earlier than I did. Two algorithm changes taught me that the list is the only audience I actually own, and moving forty thousand people onto one is much harder than starting one at zero.",
+      "Third is sound, and it is hardware rather than software. People forgive bad video and leave over bad audio. A dynamic mic in an untreated room is the single cheapest quality jump available to you.",
+      "Everything else on the stack page is genuinely optional. Design, scheduling, avatars, transcription — I use them, they are good, and none of them would have changed my first year."
+    ],
+    "dealSlugs": ["descript-creator", "kit-creator", "shure-mv7-plus", "heygen-creator"],
+    "status": "published"
+  }
+]

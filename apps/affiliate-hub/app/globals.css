@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+/*
+ * §6 tokens. Deliberately no red anywhere in this palette: the entire design
+ * thesis is that this site earns clicks on trust rather than urgency.
+ */
+@theme {
+  --color-ink: #16211d;
+  --color-paper: #edf0ea;
+  --color-surface: #ffffff;
+  --color-moss: #2e5347;
+  --color-moss-deep: #223f36;
+  --color-gold: #a8862f;
+  --color-mute: #6b7a72;
+  --color-rule: #d8ddd4;
+
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-body: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+
+  --radius-card: 14px;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  /* Keyboard focus must always be obvious — it is the same affordance a lot of
+     assistive tech relies on to tell you where you are. */
+  :focus-visible {
+    outline: 2px solid var(--color-moss);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-gold) 28%, transparent);
+  }
+}
+
+@layer components {
+  .card-lift {
+    transition:
+      transform 150ms ease,
+      border-color 150ms ease,
+      box-shadow 150ms ease;
+  }
+
+  .card-lift:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--color-moss) 35%, var(--color-rule));
+    box-shadow: 0 8px 24px -18px var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card-lift:hover {
+    transform: none;
+  }
+}

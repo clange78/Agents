@@ -1,0 +1,793 @@
+[
+  {
+    "slug": "heygen-creator",
+    "title": "HeyGen Creator Plan",
+    "brand": "HeyGen",
+    "merchant": "HeyGen",
+    "network": "partnerstack",
+    "destUrl": "https://www.heygen.com/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/heygen-creator.webp",
+    "imageAlt": "HeyGen avatar video editor open on a laptop screen",
+    "price": 29,
+    "currency": "USD",
+    "note": "I use this for the talking-head cuts I do not have the energy to film twice.",
+    "collections": [
+      "creator-stack",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "video",
+      "ai",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-04",
+    "featured": true,
+    "recurring": true,
+    "_commissionNote": "30% recurring, 12 months \u2014 highest LTV item in the stack"
+  },
+  {
+    "slug": "elevenlabs-creator",
+    "title": "ElevenLabs Creator",
+    "brand": "ElevenLabs",
+    "merchant": "ElevenLabs",
+    "network": "direct",
+    "destUrl": "https://elevenlabs.io/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/elevenlabs-creator.webp",
+    "imageAlt": "Audio waveform being edited in a voice generation tool",
+    "price": 22,
+    "currency": "USD",
+    "note": "The voice clone finally stopped sounding like a hostage video around v3, and I have used it weekly since.",
+    "collections": [
+      "creator-stack"
+    ],
+    "tags": [
+      "audio",
+      "ai",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-04",
+    "recurring": true,
+    "_commissionNote": "22% recurring"
+  },
+  {
+    "slug": "captions-pro",
+    "title": "Captions Pro",
+    "brand": "Captions",
+    "merchant": "Captions",
+    "network": "direct",
+    "destUrl": "https://www.captions.ai/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/captions-pro.webp",
+    "imageAlt": "Phone showing auto-generated subtitles burned into a vertical video",
+    "price": 24,
+    "currency": "USD",
+    "note": "Burned-in captions are the single change that most improved my watch time, and this does them in one pass.",
+    "collections": [
+      "creator-stack"
+    ],
+    "tags": [
+      "video",
+      "captions",
+      "mobile"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-11",
+    "recurring": true
+  },
+  {
+    "slug": "descript-creator",
+    "title": "Descript Creator",
+    "brand": "Descript",
+    "merchant": "Descript",
+    "network": "partnerstack",
+    "destUrl": "https://www.descript.com/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/descript-creator.webp",
+    "imageAlt": "Video being edited as a text transcript in Descript",
+    "price": 24,
+    "currency": "USD",
+    "note": "Editing video by deleting words in a transcript cut my rough-cut time roughly in half.",
+    "collections": [
+      "creator-stack",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "video",
+      "editing",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-18",
+    "featured": true,
+    "recurring": true,
+    "_commissionNote": "15% recurring, 12 months"
+  },
+  {
+    "slug": "canva-pro",
+    "title": "Canva Pro",
+    "brand": "Canva",
+    "merchant": "Canva",
+    "network": "impact",
+    "destUrl": "https://www.canva.com/pro/?aff=REPLACE_ME",
+    "image": "/img/deals/canva-pro.webp",
+    "imageAlt": "Thumbnail template being resized in a design tool",
+    "price": 15,
+    "currency": "USD",
+    "note": "I keep it purely for brand kit and one-click resize, and that alone is worth the fifteen dollars.",
+    "collections": [
+      "creator-stack"
+    ],
+    "tags": [
+      "design",
+      "thumbnails",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-18",
+    "recurring": true
+  },
+  {
+    "slug": "kit-creator",
+    "title": "Kit Creator Plan",
+    "brand": "Kit",
+    "merchant": "Kit (formerly ConvertKit)",
+    "network": "direct",
+    "destUrl": "https://kit.com/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/kit-creator.webp",
+    "imageAlt": "Email broadcast being composed in Kit",
+    "price": 29,
+    "currency": "USD",
+    "note": "The list is the only audience I own outright, and this is where I moved it after two platform algorithm changes.",
+    "collections": [
+      "creator-stack",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "email",
+      "audience",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-25",
+    "featured": true,
+    "recurring": true,
+    "_commissionNote": "30% recurring, lifetime while subscribed"
+  },
+  {
+    "slug": "riverside-standard",
+    "title": "Riverside Standard",
+    "brand": "Riverside",
+    "merchant": "Riverside.fm",
+    "network": "direct",
+    "destUrl": "https://riverside.fm/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/riverside-standard.webp",
+    "imageAlt": "Two-person remote interview recording in progress",
+    "price": 19,
+    "currency": "USD",
+    "note": "Local recording on both ends means a guest's bad wifi no longer ruins the file.",
+    "collections": [
+      "creator-stack"
+    ],
+    "tags": [
+      "podcast",
+      "interviews",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-03",
+    "recurring": true
+  },
+  {
+    "slug": "notion-plus",
+    "title": "Notion Plus",
+    "brand": "Notion",
+    "merchant": "Notion",
+    "network": "impact",
+    "destUrl": "https://www.notion.com/pricing?aff=REPLACE_ME",
+    "image": "/img/deals/notion-plus.webp",
+    "imageAlt": "Content calendar laid out as a Notion database",
+    "price": 12,
+    "currency": "USD",
+    "note": "My whole content calendar lives here, and the free tier ran out the week I started planning a month ahead.",
+    "collections": [
+      "creator-stack"
+    ],
+    "tags": [
+      "planning",
+      "docs",
+      "saas"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-03",
+    "recurring": true
+  },
+  {
+    "slug": "thorne-magnesium-bisglycinate",
+    "title": "Magnesium Bisglycinate",
+    "brand": "Thorne",
+    "merchant": "Thorne",
+    "network": "shareasale",
+    "destUrl": "https://www.thorne.com/products/dp/magnesium-bisglycinate?aff=REPLACE_ME",
+    "image": "/img/deals/thorne-magnesium-bisglycinate.webp",
+    "imageAlt": "Tub of Thorne magnesium bisglycinate powder on a kitchen counter",
+    "price": 42,
+    "currency": "USD",
+    "note": "The one supplement I have reordered without thinking about it for two years running.",
+    "collections": [
+      "calm-tools",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "supplement",
+      "sleep",
+      "recovery"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-04",
+    "featured": true,
+    "_commissionNote": "12% first order, 8% repeat"
+  },
+  {
+    "slug": "manta-sleep-mask-pro",
+    "title": "Sleep Mask PRO",
+    "brand": "Manta Sleep",
+    "merchant": "Manta Sleep",
+    "network": "shareasale",
+    "destUrl": "https://mantasleep.com/products/manta-sleep-mask-pro?aff=REPLACE_ME",
+    "image": "/img/deals/manta-sleep-mask-pro.webp",
+    "imageAlt": "Blackout sleep mask with adjustable eye cups",
+    "price": 39,
+    "wasPrice": 49,
+    "currency": "USD",
+    "code": "CALM10",
+    "note": "Cheapest thing on this page and the one that changed my sleep the most, which I find mildly insulting.",
+    "collections": [
+      "calm-tools",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "sleep",
+      "travel",
+      "blackout"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-11",
+    "featured": true
+  },
+  {
+    "slug": "hatch-restore-2",
+    "title": "Restore 2 Sunrise Alarm",
+    "brand": "Hatch",
+    "merchant": "Hatch",
+    "network": "impact",
+    "destUrl": "https://www.hatch.co/restore?aff=REPLACE_ME",
+    "image": "/img/deals/hatch-restore-2.webp",
+    "imageAlt": "Sunrise alarm clock glowing softly on a bedside table",
+    "price": 199,
+    "currency": "USD",
+    "note": "Getting my phone off the nightstand needed a replacement object, and this was it.",
+    "collections": [
+      "calm-tools",
+      "morning-routine"
+    ],
+    "tags": [
+      "sleep",
+      "light",
+      "alarm"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-11"
+  },
+  {
+    "slug": "oura-ring-4",
+    "title": "Oura Ring 4",
+    "brand": "Oura",
+    "merchant": "Oura",
+    "network": "impact",
+    "destUrl": "https://ouraring.com/product/rings?aff=REPLACE_ME",
+    "image": "/img/deals/oura-ring-4.webp",
+    "imageAlt": "Titanium smart ring resting beside a phone showing sleep data",
+    "price": 349,
+    "currency": "USD",
+    "note": "I wear it for one number only, which is how consistent my bedtime actually was versus how consistent I remember it being.",
+    "collections": [
+      "calm-tools"
+    ],
+    "tags": [
+      "sleep",
+      "tracking",
+      "wearable"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-25"
+  },
+  {
+    "slug": "eight-sleep-pod-cover",
+    "title": "Pod 4 Cover",
+    "brand": "Eight Sleep",
+    "merchant": "Eight Sleep",
+    "network": "impact",
+    "destUrl": "https://www.eightsleep.com/product/pod-cover/?aff=REPLACE_ME",
+    "image": "/img/deals/eight-sleep-pod-cover.webp",
+    "imageAlt": "Temperature-regulating mattress cover fitted to a bed",
+    "price": 2049,
+    "currency": "USD",
+    "note": "Absurdly expensive and I still would not give it up, because being too warm was the thing waking me at three.",
+    "collections": [
+      "calm-tools"
+    ],
+    "tags": [
+      "sleep",
+      "temperature",
+      "premium"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-10",
+    "_commissionNote": "flat bounty per unit \u2014 highest single payout on the site"
+  },
+  {
+    "slug": "moonbird-breathing-device",
+    "title": "moonbird Breathing Device",
+    "brand": "moonbird",
+    "merchant": "moonbird",
+    "network": "direct",
+    "destUrl": "https://www.moonbird.life/products/moonbird?aff=REPLACE_ME",
+    "image": "/img/deals/moonbird-breathing-device.webp",
+    "imageAlt": "Handheld breathing device that expands and contracts in the palm",
+    "price": 199,
+    "currency": "USD",
+    "note": "It paces your breathing in your hand so you can stop counting, which is the part I always failed at.",
+    "collections": [
+      "calm-tools"
+    ],
+    "tags": [
+      "breathwork",
+      "anxiety",
+      "device"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-10"
+  },
+  {
+    "slug": "bon-charge-blue-light-glasses",
+    "title": "Blue Light Blocking Glasses",
+    "brand": "BON CHARGE",
+    "merchant": "BON CHARGE",
+    "network": "shareasale",
+    "destUrl": "https://boncharge.com/collections/blue-light-glasses?aff=REPLACE_ME",
+    "image": "/img/deals/bon-charge-blue-light-glasses.webp",
+    "imageAlt": "Amber-tinted blue light blocking glasses folded on a book",
+    "price": 68,
+    "currency": "USD",
+    "note": "I am agnostic on the science and certain about the behaviour change: putting them on is my signal to stop working.",
+    "collections": [
+      "calm-tools"
+    ],
+    "tags": [
+      "light",
+      "evening",
+      "eyes"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-17"
+  },
+  {
+    "slug": "lmnt-sample-pack",
+    "title": "Recharge Sample Pack",
+    "brand": "LMNT",
+    "merchant": "LMNT",
+    "network": "direct",
+    "destUrl": "https://drinklmnt.com/products/lmnt-recharge-sample-pack?aff=REPLACE_ME",
+    "image": "/img/deals/lmnt-sample-pack.webp",
+    "imageAlt": "Row of electrolyte drink mix sachets in assorted flavours",
+    "price": 5,
+    "currency": "USD",
+    "note": "Eight sachets for five dollars is the cheapest way to find out whether electrolytes do anything for you.",
+    "collections": [
+      "under-25",
+      "morning-routine",
+      "calm-tools"
+    ],
+    "tags": [
+      "hydration",
+      "electrolytes",
+      "cheap"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-04",
+    "featured": true
+  },
+  {
+    "slug": "aeropress-original",
+    "title": "AeroPress Original",
+    "brand": "AeroPress",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B0047BIWSK?tag=REPLACE-ME-20",
+    "image": "/img/deals/aeropress-original.webp",
+    "imageAlt": "AeroPress coffee press disassembled on a wooden board",
+    "currency": "USD",
+    "note": "Nine years old, dropped constantly, still makes the cup I compare every caf\u00e9 to.",
+    "collections": [
+      "morning-routine",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "coffee",
+      "brewing",
+      "durable"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-04",
+    "featured": true
+  },
+  {
+    "slug": "fellow-stagg-ekg-kettle",
+    "title": "Stagg EKG Electric Kettle",
+    "brand": "Fellow",
+    "merchant": "Fellow",
+    "network": "impact",
+    "destUrl": "https://fellowproducts.com/products/stagg-ekg-electric-pour-over-kettle?aff=REPLACE_ME",
+    "image": "/img/deals/fellow-stagg-ekg-kettle.webp",
+    "imageAlt": "Gooseneck electric kettle with a temperature dial",
+    "price": 195,
+    "currency": "USD",
+    "note": "Temperature control turned a variable morning cup into a repeatable one, which is the whole reason it stays out.",
+    "collections": [
+      "morning-routine"
+    ],
+    "tags": [
+      "coffee",
+      "kettle",
+      "temperature"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-11"
+  },
+  {
+    "slug": "baratza-encore-esp",
+    "title": "Encore ESP Grinder",
+    "brand": "Baratza",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B0BSHR5W3Z?tag=REPLACE-ME-20",
+    "image": "/img/deals/baratza-encore-esp.webp",
+    "imageAlt": "Burr coffee grinder beside a pile of ground coffee",
+    "currency": "USD",
+    "note": "Buy the grinder before you upgrade the brewer \u2014 this is the one that made that obvious to me.",
+    "collections": [
+      "morning-routine"
+    ],
+    "tags": [
+      "coffee",
+      "grinder"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-18"
+  },
+  {
+    "slug": "ag1-daily-subscription",
+    "title": "AG1 Daily Subscription",
+    "brand": "AG1",
+    "merchant": "AG1",
+    "network": "impact",
+    "destUrl": "https://drinkag1.com/?aff=REPLACE_ME",
+    "image": "/img/deals/ag1-daily-subscription.webp",
+    "imageAlt": "Scoop of green powder beside a glass of water",
+    "price": 79,
+    "currency": "USD",
+    "note": "Honestly the least defensible line item in my budget, and I still drink it every morning out of pure habit.",
+    "collections": [
+      "morning-routine"
+    ],
+    "tags": [
+      "supplement",
+      "greens",
+      "subscription"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-25",
+    "recurring": true
+  },
+  {
+    "slug": "five-minute-journal",
+    "title": "The Five Minute Journal",
+    "brand": "Intelligent Change",
+    "merchant": "Intelligent Change",
+    "network": "shareasale",
+    "destUrl": "https://www.intelligentchange.com/products/the-five-minute-journal?aff=REPLACE_ME",
+    "image": "/img/deals/five-minute-journal.webp",
+    "imageAlt": "Open guided journal with a pen resting in the spine",
+    "price": 29,
+    "currency": "USD",
+    "note": "The prompts are prewritten, which is the only reason I have kept a journal past week three.",
+    "collections": [
+      "morning-routine"
+    ],
+    "tags": [
+      "journal",
+      "gratitude",
+      "paper"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-03"
+  },
+  {
+    "slug": "branch-ergonomic-chair-pro",
+    "title": "Ergonomic Chair Pro",
+    "brand": "Branch",
+    "merchant": "Branch",
+    "network": "impact",
+    "destUrl": "https://www.branchfurniture.com/products/ergonomic-chair-pro?aff=REPLACE_ME",
+    "image": "/img/deals/branch-ergonomic-chair-pro.webp",
+    "imageAlt": "Mesh-backed ergonomic office chair at a wooden desk",
+    "price": 429,
+    "wasPrice": 549,
+    "currency": "USD",
+    "note": "The one place I would tell anyone to overspend, because it is the only thing you touch for eight hours.",
+    "collections": [
+      "desk-setup",
+      "what-i-actually-use"
+    ],
+    "tags": [
+      "chair",
+      "ergonomics",
+      "posture"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-04",
+    "featured": true
+  },
+  {
+    "slug": "elgato-key-light-air",
+    "title": "Key Light Air",
+    "brand": "Elgato",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B07L755X9G?tag=REPLACE-ME-20",
+    "image": "/img/deals/elgato-key-light-air.webp",
+    "imageAlt": "Slim LED panel light mounted on a desk clamp",
+    "currency": "USD",
+    "note": "A phone in good light beats a real camera in bad light, and this is the cheap half of that trade.",
+    "collections": [
+      "desk-setup",
+      "creator-stack"
+    ],
+    "tags": [
+      "lighting",
+      "video",
+      "streaming"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-11"
+  },
+  {
+    "slug": "shure-mv7-plus",
+    "title": "MV7+ Dynamic Microphone",
+    "brand": "Shure",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B0DGT2Q5FY?tag=REPLACE-ME-20",
+    "image": "/img/deals/shure-mv7-plus.webp",
+    "imageAlt": "Dynamic broadcast microphone on a boom arm",
+    "currency": "USD",
+    "note": "A dynamic mic in an untreated room beats a condenser almost every time, and my room is very untreated.",
+    "collections": [
+      "desk-setup",
+      "creator-stack"
+    ],
+    "tags": [
+      "audio",
+      "microphone",
+      "podcast"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-18",
+    "featured": true
+  },
+  {
+    "slug": "benq-screenbar-halo",
+    "title": "ScreenBar Halo",
+    "brand": "BenQ",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B09NNGZQD1?tag=REPLACE-ME-20",
+    "image": "/img/deals/benq-screenbar-halo.webp",
+    "imageAlt": "Monitor light bar clipped to the top of a display",
+    "currency": "USD",
+    "note": "It lights the desk without lighting the screen, which fixed the evening headaches I blamed on the monitor.",
+    "collections": [
+      "desk-setup"
+    ],
+    "tags": [
+      "lighting",
+      "monitor",
+      "eyes"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-25"
+  },
+  {
+    "slug": "logitech-mx-master-3s",
+    "title": "MX Master 3S",
+    "brand": "Logitech",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B09HM94VDS?tag=REPLACE-ME-20",
+    "image": "/img/deals/logitech-mx-master-3s.webp",
+    "imageAlt": "Ergonomic wireless mouse with a horizontal scroll wheel",
+    "currency": "USD",
+    "note": "The horizontal scroll alone pays for it if you spend any real time in a video timeline.",
+    "collections": [
+      "desk-setup"
+    ],
+    "tags": [
+      "mouse",
+      "editing",
+      "wireless"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-03"
+  },
+  {
+    "slug": "autonomous-smartdesk-core",
+    "title": "SmartDesk Core",
+    "brand": "Autonomous",
+    "merchant": "Autonomous",
+    "network": "impact",
+    "destUrl": "https://www.autonomous.ai/standing-desks/smartdesk-2-home?aff=REPLACE_ME",
+    "image": "/img/deals/autonomous-smartdesk-core.webp",
+    "imageAlt": "Height-adjustable standing desk in a home office",
+    "price": 499,
+    "currency": "USD",
+    "note": "Only worth it if you will actually change position \u2014 I do, twice a day, and it earned its keep.",
+    "collections": [
+      "desk-setup"
+    ],
+    "tags": [
+      "desk",
+      "standing",
+      "posture"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-10"
+  },
+  {
+    "slug": "anker-usb-c-cable-240w",
+    "title": "240W USB-C Cable",
+    "brand": "Anker",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B0BYP2F3SF?tag=REPLACE-ME-20",
+    "image": "/img/deals/anker-usb-c-cable-240w.webp",
+    "imageAlt": "Braided USB-C charging cable coiled on a desk",
+    "currency": "USD",
+    "note": "The wrong cheap cable is genuinely worse than the right one, and I have thrown away enough to know.",
+    "collections": [
+      "under-25",
+      "desk-setup"
+    ],
+    "tags": [
+      "cable",
+      "charging",
+      "cheap"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-11"
+  },
+  {
+    "slug": "field-notes-3-pack",
+    "title": "Original Kraft 3-Pack",
+    "brand": "Field Notes",
+    "merchant": "Field Notes",
+    "network": "direct",
+    "destUrl": "https://fieldnotesbrand.com/products/original-kraft?aff=REPLACE_ME",
+    "image": "/img/deals/field-notes-3-pack.webp",
+    "imageAlt": "Three kraft-paper pocket notebooks stacked on a desk",
+    "price": 14.95,
+    "currency": "USD",
+    "note": "Small enough that writing three lines does not feel like starting a project.",
+    "collections": [
+      "under-25",
+      "morning-routine"
+    ],
+    "tags": [
+      "notebook",
+      "paper",
+      "pocket"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-18"
+  },
+  {
+    "slug": "uni-ball-signo-307",
+    "title": "Signo 307 Gel Pens",
+    "brand": "uni-ball",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B00PG7Z8CQ?tag=REPLACE-ME-20",
+    "image": "/img/deals/uni-ball-signo-307.webp",
+    "imageAlt": "Black gel pens laid in a row beside a notebook",
+    "currency": "USD",
+    "note": "I have bought these for eleven years and have never once been annoyed by one.",
+    "collections": [
+      "under-25"
+    ],
+    "tags": [
+      "pen",
+      "stationery",
+      "cheap"
+    ],
+    "status": "live",
+    "addedAt": "2026-02-25"
+  },
+  {
+    "slug": "baggu-standard-bag",
+    "title": "Standard Reusable Bag",
+    "brand": "BAGGU",
+    "merchant": "BAGGU",
+    "network": "shareasale",
+    "destUrl": "https://baggu.com/products/standard-baggu?aff=REPLACE_ME",
+    "image": "/img/deals/baggu-standard-bag.webp",
+    "imageAlt": "Folded ripstop nylon tote bag in a small pouch",
+    "price": 14,
+    "currency": "USD",
+    "note": "Folds to the size of a wallet and has been in my bag every day for three years.",
+    "collections": [
+      "under-25"
+    ],
+    "tags": [
+      "bag",
+      "everyday",
+      "cheap"
+    ],
+    "status": "live",
+    "addedAt": "2026-03-03"
+  },
+  {
+    "slug": "lumen-metabolism-tracker",
+    "title": "Lumen Metabolism Tracker",
+    "brand": "Lumen",
+    "merchant": "Lumen",
+    "network": "impact",
+    "destUrl": "https://www.lumen.me/shop?aff=REPLACE_ME",
+    "image": "/img/deals/lumen-metabolism-tracker.webp",
+    "imageAlt": "Handheld metabolism tracker being breathed into",
+    "price": 249,
+    "currency": "USD",
+    "note": "Interesting for a month, then it became one more thing to do before breakfast, so I have paused it here.",
+    "collections": [
+      "calm-tools"
+    ],
+    "tags": [
+      "tracking",
+      "metabolism",
+      "device"
+    ],
+    "status": "paused",
+    "addedAt": "2026-02-18",
+    "_commissionNote": "program paused pending new creative \u2014 do not push in posts"
+  },
+  {
+    "slug": "moleskine-cahier-3-pack",
+    "title": "Cahier Journal 3-Pack",
+    "brand": "Moleskine",
+    "merchant": "Amazon",
+    "network": "amazon",
+    "destUrl": "https://www.amazon.com/dp/B0055UUVAM?tag=REPLACE-ME-20",
+    "image": "/img/deals/moleskine-cahier-3-pack.webp",
+    "imageAlt": "Three soft-cover cahier notebooks with visible stitched spines",
+    "currency": "USD",
+    "note": "Replaced by the Field Notes pack above after the size I liked was discontinued.",
+    "collections": [
+      "under-25"
+    ],
+    "tags": [
+      "notebook",
+      "paper"
+    ],
+    "status": "dead",
+    "addedAt": "2026-02-04",
+    "expiresAt": "2026-07-01"
+  }
+]
