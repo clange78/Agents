@@ -1,45 +1,52 @@
 # Vendor fingerprints — sureshotvideo@gmail.com
 
-Derived from a live scan of Jun–Aug 2026. Add new vendors here as Pass B
-surfaces them; this file is what keeps Pass A precise.
+Verified against a full extraction of Jun 1 – Sep 1 2026. Amounts below are the
+figures actually observed, useful as a sanity check on future runs. Add new
+vendors as Pass B surfaces them; this file is what keeps Pass A precise.
 
 ## Class A — amount is in the email body
 
-| Vendor | Sender | Subject pattern | Cadence | Category |
-|---|---|---|---|---|
-| ClickFunnels | `receipts+…@stripe.com` | `Your Clickfunnels receipt [#NNNN-NNNN]` | monthly, ~18th, $106.70 | Dues & Subscriptions |
-| ClickFunnels *(dup)* | `noreply@payments.ai` | `Receipt NO. N` | monthly, ~19th | **suppress — see below** |
-| Emergent Labs | `invoice+statements+acct_…@stripe.com` | `Your receipt from EMERGENT LABS INC #…` | monthly, ~12th | Dues & Subscriptions |
-| AWeber | `invoice+statements@aweber.com` | `Your receipt from AWeber #…` | monthly, ~1st | Dues & Subscriptions |
-| Google Play | `googleplay-noreply@google.com` | `Your Google Play Order Receipt from …` | monthly, ~8th | Software |
-| Algotels | `donotreply@algotels.com` | `Your Algotels Receipt #…` | one-off | Travel |
-| Lamarque Ford | `noreply@lamarqueford.com` | `Lamarque Ford Receipt` | one-off | Auto — confirm repair vs. purchase |
+| Vendor | Sender | Subject pattern | Cadence | Observed | Category |
+|---|---|---|---|---|---|
+| ClickFunnels | `receipts+…@stripe.com` | `Your Clickfunnels receipt [#NNNN-NNNN]` | monthly, 18th | $106.70 | Dues & Subscriptions |
+| ClickFunnels *(dup)* | `noreply@payments.ai` | `Receipt NO. N` | monthly, 19th | $106.70 | **suppress — see below** |
+| Emergent Labs | `invoice+statements+acct_1QMlxNIhzbhimiMI@stripe.com` | `Your receipt from EMERGENT LABS INC #…` | monthly, 12th | $20.00 | Dues & Subscriptions |
+| AWeber | `invoice+statements@aweber.com` | `Your receipt from AWeber #…` | monthly, 1st | $55.00 | Dues & Subscriptions |
+| IONOS | `noreply@ionos.com` | `Your IONOS Invoice … Has Arrived` | monthly, 6th | $3.06 | Dues & Subscriptions |
+| Google Play | `googleplay-noreply@google.com` | `Your Google Play Order Receipt from …` | monthly, 8th | $2.18 | Dues & Subscriptions |
+| Algotels | `donotreply@algotels.com` | `Your Algotels Receipt #…` | one-off | $357.96 | Travel |
+| Lamarque Ford | `noreply@lamarqueford.com` | `Lamarque Ford Receipt` | one-off | $97.89 | Auto — confirm service vs. parts |
 
-Stripe bodies parse cleanly:
+Parsing notes:
 
-```
-Amount paid
-$106.70
-
-Date paid
-Aug 18, 2026, 6:30:21 PM
-
-Payment method
-- 8796
-```
+- **Stripe-family** (ClickFunnels, Emergent Labs, AWeber) — `Amount paid\n$106.70`
+  and `Date paid\nAug 18, 2026`, or inline `Receipt from X $20.00 Paid August 12, 2026`.
+- **IONOS** — the body *does* carry `Invoice amount:\n$3.06` even though it also
+  attaches a PDF. Parse the body; the attachment is redundant.
+- **Google Play** — take `Total: $2.18/month`, not the `$1.99` line item; the
+  difference is sales tax.
+- **Lamarque Ford** — arrives as raw HTML that survives PLAIN_TEXT conversion.
+  Take the `Amount:` row, not `Original Amount:` (both `$97.89` here, but they
+  diverge when a surcharge applies).
+- **Algotels** — take `Paid` ($357.96), not the `2 rooms x 1 night` subtotal
+  ($314.00); the difference is taxes and fees.
 
 ## Class B — amount is ONLY in a PDF attachment
 
 | Vendor | Sender | Subject pattern | Attachment | Category |
 |---|---|---|---|---|
 | Meta / Facebook Ads | `noreply@facebookmail.com` | `RE: Meta Invoice <id>` | `Statement_<id>.pdf` | Advertising |
-| IONOS | `noreply@ionos.com` | `Your IONOS Invoice … Has Arrived` | invoice PDF | Software |
 
-Both bodies are boilerplate with **no figures at all** — Meta's reads only
-"Attached is your self accounted document in relation to Meta activity."
-Download and read the PDF, or route to `review.csv`. Never estimate.
+The body is boilerplate with **no figures at all** — only "Attached is your self
+accounted document in relation to Meta activity."
 
-Meta bills roughly twice a month, so expect ~2 rows/month, not 1.
+**Known limitation:** the Gmail connector in this environment exposes no
+attachment-download tool (`get_message` returns attachment *ids* and filenames,
+not bytes). `messageFormat: RAW` would inline the base64 PDF, but these messages
+run ~1.4 MB each and will exhaust context. So Meta rows land in `review.csv`
+until the amounts are keyed by hand from Meta Ads Manager → Billing, or an
+attachment tool becomes available. **Never estimate them.** Meta bills roughly
+twice a month, so expect ~2 rows/month unaccounted for.
 
 ## Exclude — outbound accounts receivable
 
@@ -54,19 +61,20 @@ Recipient domains that confirm outbound: `navco.com`, `raesecurity.com`.
 Customer replies (`invoices@navco.com`) land in the same threads — also not
 expenses.
 
-**Scale of the problem:** 90 days of `subject:receipt OR subject:invoice`
-returned ~201 threads. Excluding this sender alone dropped it to 35.
+**Scale:** 90 days of `subject:receipt OR subject:invoice` returned ~201 threads.
+Excluding this sender alone dropped it to 35.
 
-## Exclude — marketing that mimics receipt language
+## Exclude — matches receipt language but is not a receipt
 
 | Sender | Example subject | Tell |
 |---|---|---|
 | `hi@everydaydose.com` | `I'm the guy packing your order.` | no amount, no order number |
-| `no-reply@business.amazon.com` | `Add a backup payment to avoid order disruptions` | account notice, not a purchase |
-| `hi@everydaydose.com` | `Your order could be free` | promotional |
+| `no-reply@business.amazon.com` | `Add a backup payment to avoid order disruptions` | account notice |
+| `googleplay-noreply@google.com` | `Updates to Google Play Terms of Service` | policy notice from a receipt sender |
+| `donotreply@algotels.com` | `Booking Confirmed: Your stay at …` | confirmation for booking 13472439, **already receipted** — would double-count |
 
-These match `subject:"your order"` and slip through Pass B. The amount test
-catches all of them.
+Note the last two: a vendor on the Class A list still sends non-receipt mail.
+Sender alone never qualifies a message; the amount test decides.
 
 ## Known duplicate pair
 
@@ -78,5 +86,5 @@ ClickFunnels bills **once** but emails **twice**:
 | payments.ai | `Receipt NO. 13` | Aug 19 | $106.70 |
 
 Confirmed across June (`#1075-7265` / NO. 11), July (`#1827-7431` / NO. 12), and
-August (`#1996-1326` / NO. 13). The normalizer's 2-day window catches this
-automatically and keeps the Stripe row (richer reference and card last4).
+August (`#1996-1326` / NO. 13). The 2-day dedup window catches this and keeps the
+Stripe row (richer reference plus card last4).

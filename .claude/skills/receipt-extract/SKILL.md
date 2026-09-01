@@ -75,10 +75,12 @@ into three classes (see `references/vendors.md` for which is which):
 - **Class A — body-parseable.** Stripe, payments.ai, Google Play, Algotels,
   Lamarque Ford. Amount and date sit in clean labelled lines, e.g.
   `Amount paid\n$106.70` / `Date paid\nAug 18, 2026`.
-- **Class B — PDF-only.** Meta (`Statement_<id>.pdf`), IONOS. The body has no
-  number. Download the attachment and read the PDF for the total. If the PDF
-  cannot be read, emit the row with `amount: null` and
-  `needsReview: "amount is in PDF attachment only"` — never infer it.
+- **Class B — PDF-only.** Meta (`Statement_<id>.pdf`) only. The body has no
+  number. The Gmail connector exposes no attachment-download tool, so unless one
+  is available, emit the row with `amount: null` and
+  `needsReview: "amount is in PDF attachment only"` and let the user key it from
+  Meta Ads Manager → Billing. Never infer it. Check `references/vendors.md`
+  before assuming a vendor is PDF-only — IONOS looks like one and is not.
 - **Class C — unknown sender.** Extract what is legible, set
   `confidence: "low"`, and let review catch it.
 
